@@ -12,7 +12,7 @@ exports.handler = async function(event, context) {
   const todoItem = {
     data: data,
   };
-  /* construct the fauna query */
+  /* construct the fauna query_ */
   return client
     .query(q.Create(q.Ref("classes/todos"), todoItem))
     .then((response) => {
